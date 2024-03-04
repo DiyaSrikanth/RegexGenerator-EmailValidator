@@ -1,0 +1,83 @@
+*
+{
+    margin:0;
+    padding :0;
+    
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ffffff;
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+.regex
+{
+    position : absolute;
+    left: 100px;
+    border-spacing: 20px;
+
+}
+
+.regex input
+{
+    position:relative;
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.regex textarea
+{ 
+    position:relative;
+    width: 400px;
+    resize : none;
+    padding : 10px;
+    border: 3px solid #fefeff ;
+    background: #bcbcbc;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+button 
+{
+    color: #ffffff;
+    padding: 10px;
+    background: #32af34;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border : #32af34;
+
+}
+
+
+.email 
+{
+    float: right;
+    position: absolute;
+    right: 100px;
+    border-spacing: 20px;
+
+}
+
+
+.email input
+{
+    position:relative;
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+}

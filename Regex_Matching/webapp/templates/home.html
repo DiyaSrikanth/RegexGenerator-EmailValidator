@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class = 'email'>
+        <h1>Check e-mail validity</h1>
+    </br>
+        <form action="/email" method="POST" autocomplete="off">
+            <input type="text" name = "mail" placeholder = "Enter your e-mail"></br></br>
+            <button>Check</button></br>
+        </form>
+    </br>
+    {% if com %}
+        <h3>Valid e-mail Id</h3>
+    {% endif %}
+    </div>
+    <div class = 'regex'>
+        <h1>Regex Generator</h1>
+    </br>
+        <form action = "/" method = "POST" autocomplete="off">
+            <input type= "text" class= 'reg' name= "regexpression" placeholder = 'Enter regular expression'></br>
+        </br>
+        </br>
+            <textarea id="my-textarea" name="usrtext" cols="50" rows="10" placeholder="Enter text here"></textarea></br></br>
+            <button>Get regex</button></br>
+        </form> </br>
+ 
+        <h3>Matches found:
+        </h3>{% if 'None' not in find %} 
+            <h3>{{length}}</h3>
+            {% endif %}
+       
+
+           <ul>
+            {% if 'None' not in find %} 
+            {% for x in find%}
+            <li>{{x}}</li>
+            {% endfor %}
+            {% endif %}
+
+        </ul>
+        </div>
+    </div>
+    </br>
+    
+</br>
+    
+    <script>
+        if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+        }
+        </script>
+     
+</body>
+</html>
